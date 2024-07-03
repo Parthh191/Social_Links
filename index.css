@@ -1,54 +1,61 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    
 
-:root{
---MARGIN:0.5em;
-}
-body{
-place-items: center;
-display: grid;
-background-color: black;
-height: auto;
-}
-main{
-    width: 400px;
-    height: auto;
-    background-color: rgb(39, 38, 38);
-    display: grid;
-    place-items: center;
-    border-radius: 20px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-img{
-    max-width: 100%;
-    border-radius: 50%;
-    margin: 1em;
-}
-h1{
-    font-family: "Roboto", sans-serif;
-    color: white;
-}
-h2{
-    font-family: "Roboto", sans-serif;
-    color: rgb(195, 255, 0);
-}
-p{
-    font-family: "Roboto", sans-serif;
-    color: white;
-}
-a{  display: inline-block;
-    text-decoration: none;
-    color: white;
-    border:2px double gray;
-    height: 50px;
-    width: 250px;
-    border-radius: 5px;
-    text-align: center;
-    background-color: gray;
+:root {
+    --MARGIN : 0.5em;
+    --COLOR: white;
+    --RGCOLOR : rgb(195, 255, 0);
+
+    }
+    body {
+    place-items : center;
+    display : grid;
+    background-color : black;
+    height : auto;
+    }
+    main {
+    width : 500px;
+    height : auto;
+    background-color : rgb(39, 38, 38);
+    display : grid;
+    place-items : center;
+    border-radius : 20px;
+    margin-top : 100px;
+    margin-bottom : 100px;
+    margin : 1em;
+    }
+    img {
+    max-width : 100%;
+    height : auto;
+    border-radius : 50%;
+    margin : var(--MARGIN);
+    }
+    h1 {
+        color: var(--COLOR);
+    font-family : "Roboto", sans-serif;
+    }
+    h2 {
+    font-family : "Roboto", sans-serif;
+    color: var(--RGCOLOR);
+    }
+    p {
+    margin : var(--MARGIN);
+    font-family : "Roboto", sans-serif;
+    color: var(--COLOR);
+    }
+    a {
+    display : inline-block;
+    text-decoration : none;
+    color: var(--COLOR);
+    border : rgb(39, 38, 38) double 2px;
+    height : 50px;
+    width : 300px;
+    border-radius : 5px;
+    text-align : center;
+    background-color : gray;
     margin: var(--MARGIN);
-}
-a:hover{
-    background-color: rgb(195, 255, 0);
-}
-
+    }
+    a:hover{
+        background-color: var(--RGCOLOR);
+    }
